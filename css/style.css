@@ -2,7 +2,13 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+
+body {
   font-family: 'Montserrat', sans-serif;
+}
+body p {
+  font-size: 12px;
 }
 
 .clearfix::after {
@@ -60,15 +66,13 @@ li .button:hover {
   background-color: lightgrey;
 }
 
-header {
-  font-size: 12px;
-}
 
 #top-half {
   width: 100%;
   position: fixed;
   top: 0%;
   right: 0%;
+  z-index: 5;
   background-color: #F4F9FD;
   border-bottom: 1px solid #33475B;
 }
@@ -97,7 +101,6 @@ header {
   color: #FF7A5A;
 }
 
-
 #nav {
   margin-top: 60px;
   background-color: white;
@@ -121,7 +124,7 @@ header {
   height: 695px;
   background-image: url(../img/jumbotron.png);
   background-size: cover;
-  background-position: right top;
+  background-position: top right;
 }
 
 #contenuto-hb {
@@ -152,19 +155,80 @@ header {
 
 main {
   border-bottom: 3px solid black;
+
 }
+
 
 #main-top {
   width: 100%;
-  height: 800px;
-  background-color: aquamarine;
+  /* height: 800px; */
+  background-color: #F4F9FD;
 }
 
 .top-part {
   width: 100%;
-  height: 200px;
-  background-color: lightblue;
+  height: 270px;
+  display: inline-block;
+  margin-top: 20px;
+  position: relative;
+  color: #33475B;
+  border: 1px solid black;
+}
+#integration {
+  width: 200px;
+}
+.powerful-alone {
+  width: 85%;
+  padding-top: 20px;
+  text-align: center;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.powerful-alone h2 {
   margin-bottom: 20px;
+}
+
+#free-hubspot-container {
+  width: 100%;
+  height: 300px;
+  display: inline-block;
+  background-color: white;
+  box-shadow: 1px 1px 3px 3px #EDEDED;
+  border: 1px solid #FAFAFA;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+#container-left {
+  width: 30%;
+  height: 100%;
+  background-color: white;
+  float: left;
+  position: relative;
+}
+#crm {
+  width: 120px;
+  display: inline-block;
+  margin-bottom: 20px;
+}
+#container-left .button {
+  font-size: 12px;
+  padding: 15px 25px;
+}
+#inside-container {
+  width: 90%;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#container-right {
+  width: 70%;
+  height: 100%;
+  background-color: white;
+  float: left;
 }
 
 #bottom-part {
