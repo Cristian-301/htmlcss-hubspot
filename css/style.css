@@ -2,14 +2,58 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
 }
 
 .alignment {
   height: 100%;
   width: 70%;
   margin: auto;
-  background: red;
-  border: 1px solid black;
+}
+
+.list-inline {
+  height: 100%;
+  list-style: none;
+}
+.list-inline li {
+  height: 100%;
+  display: inline-block;
+  text-decoration: none;
+  line-height: 60px;
+  padding: 0 10px;
+}
+.list-inline li:first-child {
+  padding-left: 0px;
+}
+.list-inline li:last-child {
+  padding-right: 0px;
+}
+.list-inline a {
+  text-decoration: none;
+  color: #33475B;
+}
+.list-inline a:hover {
+  text-decoration: underline;
+}
+
+li .button {
+  height: 100%;
+  display: inline-block;
+  line-height: 16px;
+  background-color: #FF7A5A;
+  border: 1px solid #FF7A5A;
+  border-radius: 5px;
+  padding: 10px;
+  color: white;
+}
+li .button:hover {
+  text-decoration: none;
 }
 
 .container {
@@ -17,35 +61,94 @@
 }
 
 header {
-  height: 700px;
-  border-bottom: 3px solid black;
-}
-
-#header-top {
-  height: 25%;
-  background: pink;
+  font-size: 12px;
 }
 
 #top-half {
-  height: 50%;
-  background-color: lightyellow;
+  width: 100%;
+  position: fixed;
+  top: 0%;
+  right: 0%;
+  background-color: #F4F9FD;
+  border-bottom: 1px solid #33475B;
 }
 
-#bottom-half {
-  height: 50%;
-  background-color: lightgreen;
+#top-left-side {
+  height: 100%;
+  float: left;
+}
+#top-left-side a {
+  border-right: 1px solid #33475B;
+  padding-right: 20px;
+}
+#top-left-side li:last-child a {
+  border-right: 0px;
 }
 
-#header-bottom {
-  height: 75%;
-  background-color: aqua;
+#top-right-side {
+  height: 100%;
+  float: right;
+}
+#search {
+  color: #58BED0;
+}
+#login {
+  background-color: #F4F9FD;
+  color: #FF7A5A;
+}
+
+
+#nav {
+  margin-top: 60px;
+  background-color: white;
+}
+#nav-left {
+  height: 100%;
+  float: left;
+  line-height: 60px;
+}
+#nav-left img {
+  width: 100px;
+  vertical-align: middle;
+}
+
+#nav-right {
+  height: 100%;
+  float: right;
+}
+
+#jumbotron {
+  height: 695px;
+  background-image: url(../img/jumbotron.png);
+  background-size: cover;
+  background-position: right top;
 }
 
 #contenuto-hb {
   width: 50%;
   height: 100%;
-  background-color: pink;
+
 }
+#contenuto-hb h1{
+  font-size: 35px;
+  color: #33475B;
+  padding-top: 50px;
+}
+#contenuto-hb p {
+  padding: 20px 0;
+  line-height: 1.8;
+}
+.button {
+  display: inline-block;
+  padding: 20px 40px;
+  line-height: 16px;
+  background-color: #FF7A5A;
+  border: 1px solid #FF7A5A;
+  border-radius: 5px;
+  color: white;
+  text-decoration: none;
+}
+
 
 main {
   border-bottom: 3px solid black;
