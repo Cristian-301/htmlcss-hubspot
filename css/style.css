@@ -63,7 +63,7 @@ li .button:hover {
 }
 
 .container {
-  background-color: lightgrey;
+  background-color: #F4F9FD;
 }
 
 
@@ -130,7 +130,6 @@ li .button:hover {
 #contenuto-hb {
   width: 50%;
   height: 100%;
-
 }
 #contenuto-hb h1{
   font-size: 35px;
@@ -152,12 +151,9 @@ li .button:hover {
   text-decoration: none;
 }
 
-
 main {
   border-bottom: 3px solid black;
-
 }
-
 
 #main-top {
   width: 100%;
@@ -167,15 +163,15 @@ main {
 
 .top-part {
   width: 100%;
-  height: 270px;
+  height: 250px;
   display: inline-block;
   margin-top: 20px;
   position: relative;
   color: #33475B;
-  border: 1px solid black;
+  /* border: 1px solid black; */
 }
 #integration {
-  width: 200px;
+  width: 175px;
 }
 .powerful-alone {
   width: 85%;
@@ -188,10 +184,13 @@ main {
 .powerful-alone h2 {
   margin-bottom: 20px;
 }
+.powerful-alone p {
+  line-height: 20px;
+}
 
 #free-hubspot-container {
   width: 100%;
-  height: 300px;
+  height: 250px;
   display: inline-block;
   background-color: white;
   box-shadow: 1px 1px 3px 3px #EDEDED;
@@ -205,6 +204,7 @@ main {
   background-color: white;
   float: left;
   position: relative;
+  /* border-right: 1px solid black; */
 }
 #crm {
   width: 120px;
@@ -229,23 +229,126 @@ main {
   height: 100%;
   background-color: white;
   float: left;
+
+}
+#hubspot-crm {
+  width: 100%;
+  height: 50%;
+  padding: 0 30px;
+  color: #33475B;
+}
+#hubspot-crm h3 {
+  padding-top: 50px;
+  margin-bottom: 20px;
+}
+#hubspot-crm p {
+  line-height: 20px;
+}
+
+
+#popolar-feature {
+  padding: 0 30px;
+  color: #33475B;
+  position: relative;
+}
+#popolar-feature::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 40px;
+  width: 60%;
+  height: 9px;
+  border-top: 2px solid gray;
+}
+#popolar-feature h4 {
+  margin-top: 25px;
+  text-transform: uppercase;
+}
+#check-list {
+  width: 100%;
+  padding-left: 30px;
+  padding-top: 20px;
+}
+#check-list li {
+  display: inline-block;
+  font-size: 12px;
+  padding-right: 10px;
+ }
+ #check-list li i {
+   padding-right: 5px;
+ }
+.check-circle {
+  color: #FF7A5A;
 }
 
 #bottom-part {
   width: 100%;
-  height: 340px;
-  background-color: blue;
+  margin-top: 25px;
 }
-#bottom-part .hub:nth-child(2) {
+#bottom-part .hub-container:nth-child(2) {
   margin: 0 5%;
 }
 
-.hub {
+.hub-container {
   width: 30%;
-  height: 100%;
-  background-color: gray;
+  padding: 10px;
+  margin-bottom: 30px;
+  background-color: white;
   float: left;
-  border: 1px solid black;
+  box-shadow: 1px 1px 3px 3px #EDEDED;
+}
+.hub {
+  height: 100%;
+}
+.hub-top {
+  border-bottom: 1px solid black;
+}
+.hub-image {
+  display: block;
+  width: 90px;
+  margin: auto;
+  margin-bottom: 20px;
+}
+#sales-image {
+  width: 110px;
+}
+#service-image {
+  width: 81px;
+}
+.hub-text {
+  width: 95%;
+  line-height: 20px;
+  text-align: center;
+  color: #33475B;
+  margin-bottom: 60px;
+}
+.hub-text h4 {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+.hub-bottom {
+  color: #33475B;
+}
+.bottom-title {
+  margin-top: 40px;
+  margin-bottom: 20px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.list li {
+  font-size: 12px;
+  list-style: none;
+}
+.list li i {
+  padding-right: 10px;
+}
+.bottom-button {
+  text-align: center;
+  margin-top: 40px;
+}
+.bottom-button a {
+  font-size: 12px;
+  padding: 15px 25px;
 }
 
 #main-middle {
