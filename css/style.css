@@ -97,7 +97,7 @@ li .button:hover {
   color: #58BED0;
 }
 #login {
-  background-color: #F4F9FD;
+  background-color: white;
   color: #FF7A5A;
 }
 
@@ -151,13 +151,8 @@ li .button:hover {
   text-decoration: none;
 }
 
-main {
-  border-bottom: 3px solid black;
-}
-
 #main-top {
   width: 100%;
-  /* height: 800px; */
   background-color: #F4F9FD;
 }
 
@@ -168,7 +163,6 @@ main {
   margin-top: 20px;
   position: relative;
   color: #33475B;
-  /* border: 1px solid black; */
 }
 #integration {
   width: 175px;
@@ -204,7 +198,6 @@ main {
   background-color: white;
   float: left;
   position: relative;
-  /* border-right: 1px solid black; */
 }
 #crm {
   width: 120px;
@@ -353,16 +346,13 @@ main {
 
 #main-middle {
   width: 100%;
-  /* height: 500px; */
   background-image: linear-gradient(to right, #00A7BA, #00B8A9);
 }
 
 #title {
   display: inline-block;
   width: 100%;
-  /* height: 200px; */
   margin: 30px 0;
-  /* background-color: skyblue; */
 }
 #title h3 {
   font-size: 23px;
@@ -381,7 +371,6 @@ main {
   width: 100%;
   height: 350px;
   margin: 20px 0px 30px 0;
-  /* background-color: skyblue; */
 }
 #grid-top {
   width: 100%;
@@ -438,12 +427,11 @@ main {
   width: 100%;
   height: 500px;
   background-color: white;
+  color: #33475B;
 }
 #main-bottom-costumers {
   width: 100%;
   margin-bottom: 20px;
-  /* height: 30%; */
-  /* border: 1px solid black; */
 }
 #costumers {
   width: 85%;
@@ -454,9 +442,6 @@ main {
 #costumers-left {
   width: 40%;
   height: 100%;
-  /* border: 1px solid black; */
-  /* background-color: yellow; */
-  /* text-align: center; */
   float: left;
 }
 #costumers-left h3 {
@@ -474,7 +459,6 @@ main {
   height: 150px;
   padding-left: 20px;
   padding-top: 35px;
-  /* background-color: lightgray; */
   float: left;
 }
 .costumers-right-logo {
@@ -490,10 +474,6 @@ main {
   width: 100%;
 }
 
-
-/* #growth {
-  border: 1px solid black;
-} */
 #growth-left {
   width: 40%;
   float: left;
@@ -525,19 +505,44 @@ main {
 
 footer {
   height: 500px;
-  background-color: coral;
+  background-color: #324A5B;
+  padding-bottom: 20px;
 }
 
 #footer-top {
  height: 70%;
- border: 1px solid black;
 }
 .info {
   width: 25%;
   height: 100%;
-  background-color: darkgrey;
-  border: 1px solid black;
   float: left;
+}
+.info-title {
+  margin: 20px 0;
+  color: white;
+}
+.info-list li {
+  list-style: none;
+  margin-bottom: 10px;
+}
+.info-list li a {
+  text-decoration: none;
+  color: #cbd6e2;
+  font-size: 12px;
+  text-transform: capitalize;
+}
+.info-list li a:hover {
+  text-decoration: underline;
+  color: #7FD1DE;
+}
+.info-list li #color-button {
+  background-color: #C9D4E1;
+  color: #324A5B;
+  border: 1px solid #C9D4E1;
+}
+.info-list li i {
+  font-size: 15px;
+  margin-right: 15px;
 }
 
 #footer-bottom{
@@ -545,10 +550,47 @@ footer {
 }
 #language {
   height: 30%;
-  background-color: lightgray;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid #cbd6e2;
 }
+#language ul {
+  width: 100%;
+  text-align: center;
+
+}
+#language li {
+  margin-right: 20px;
+  font-size: 12px;
+  display: inline-block;
+}
+#language li a {
+  text-decoration: none;
+  color: #cbd6e2;
+}
+#language li a:hover {
+  text-decoration: underline;
+  color: #7FD1DE;
+}
+
 #policy {
   height: 70%;
-  background-color: grey;
+  padding-top: 50px;
+}
+#policy-left {
+  float: left;
+  color: #cbd6e2;
+}
+#policy-left img {
+  width: 100px;
+}
+#policy-right {
+  float: right;
+}
+#policy-right ul li {
+  display: inline-block;
+  margin-right: 10px;
+  font-size: 12px;
+}
+#policy-right li a {
+  text-decoration: none;
+  color: #cbd6e2;
 }
