@@ -120,22 +120,13 @@ li .button:hover {
 }
 
 #jumbotron {
-  height: 695px;
+  height: 1040px;
   background-image: url(../img/jumbotron.png);
   background-size: cover;
-  background-position: top right;
+  background-position: bottom;
   position: relative;
 }
-#jumbotron::before {
-  content: "";
-  width: 100%;
-  height: 80px;
-  background-color: #AAE9E2;
-  position: absolute;
-  bottom: 0;
-  border-top: 3px solid black;
-  border-bottom: 3px solid black;
-}
+
 
 #contenuto-hb {
   width: 50%;
@@ -463,18 +454,17 @@ li .button:hover {
 }
 
 #costumers-right {
+  display: flex;
+  flex-wrap: wrap;
   width: 60%;
-  height: 150px;
-  padding-left: 20px;
   padding-top: 35px;
-  float: left;
 }
 .costumers-right-logo {
-  display: inline-block;
-  width: 85px;
-  height: 50px;
+  display: flex;
+  align-items: center;
+  width: 90px;
+  height: 60px;
   margin-left: 20px;
-  float: left;
 }
 .costumers-right-logo img {
   display: inline-block;
